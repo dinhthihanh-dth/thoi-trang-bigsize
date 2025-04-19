@@ -1,0 +1,155 @@
+﻿body
+.navbar-default .navbar-brand {
+    color: #aa1212;
+}
+
+.navbar-brand {
+    font-family: cursive;
+    color: red;
+    font-size: 30px;
+}
+
+.navbar-default {
+    background-color: #dddddd;
+    border-color: white;
+    width: 100%;
+}
+
+.carousel-caption {
+    left: 10%;
+    padding-bottom: 30px;
+    text-align: left;
+    width: 35%;
+    top: 22%;
+}
+
+.row img {
+    max-width: 100%;
+}
+
+.container {
+    margin-top: 10px;
+}
+
+.show h1 {
+    margin-left: 600px;
+}
+
+#sanphammoi img {
+    max-width: 75%;
+    max-height: 50%;
+    margin-top: 20px;
+    margin-left: 2px;
+}
+
+.img {
+    opacity: 4;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.text {
+    background-color: #808080;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.show1 a {
+    margin-left: 113px;
+    color: black;
+    line-height: 3px;
+}
+
+.col-sm-4:hover.img {
+    opacity: 0.3;
+}
+
+.col-sm-4:hover .middle {
+    opacity: 1;
+}
+
+.col-sm-3 {
+    padding: 0;
+    margin: -5px -215px 0 145px;
+}
+
+.show1 img {
+    margin-left: 60px;
+    max-width: 80%;
+    margin-top: 50px;
+    margin-right: 90px;
+}
+
+.container {
+    margin-top: 100px;
+}
+
+    .container li a {
+        color: #ccc4c4;
+        margin-left: -35px;
+    }
+
+    .container ul {
+        line-height: 40px;
+        margin-bottom: 235px;
+    }
+
+    .container h5 {
+        color: ghostwhite;
+        padding-top: 100px;
+    }
+
+    .container p {
+        color: #ccc4c4;
+    }
+
+#cuoitrang {
+    background-color: #0c0b0b;
+    margin-bottom: -13px;
+}
+
+.h1 img {
+    display: block;
+    max-width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.col-sm-4:hover img {
+    transform: scale(1.1);
+}
+
+.col-sm-4 img {
+    transition: all 0.3s ease-in-out;
+}
+
+.col-sm-3:hover img {
+    transform: scale(1.1);
+}
+
+.zoom {
+    overflow: hidden;
+}
+
+.col-sm-3 img {
+    transition: all 0.3s ease-in-out;
+}
+
+.h1 {
+    overflow: hidden;
+}
+}

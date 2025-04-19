@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>dangnhap</title>
+    <style type="text/css">
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box
+        }
+        input[type=text], input[type=password] {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+        }
+
+        input[type=text]:focus, input[type=password]:focus {
+                background-color: #ddd;
+                outline: none;
+            }
+        hr {
+            border: 1px solid #f1f1f1;
+            margin-bottom: 25px;
+        }
+        button {
+            background-color: #04AA6D;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+        }
+        button:hover {opacity: 1;}
+       .cancelbtn {
+            padding: 14px 20px;
+            background-color: #f44336;
+        }
+        .cancelbtn, .signupbtn {
+            float: left;
+            width: 50%;
+        }
+        .container {
+            padding: 16px;
+        }
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        @media screen and (max-width: 300px) {
+            .cancelbtn, .signupbtn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <form action="action_page.php" style="border:1px solid #ccc">
+        <div class="container">
+            <h1>Đăng kí </h1>
+            <p>Vui lòng điền vào biểu mẫu này để tạo tài khoản..</p>
+            <hr>
+
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Email" name="email" required>
+
+            <label for="psw"><b>Mật khẩu</b></label>
+            <input type="password" placeholder="Nhập Mật khẩu" name="psw" required>
+
+            <label for="psw-repeat"><b>Lặp lại mật khẩu</b></label>
+            <input type="password" placeholder="Lặp lại mật khẩu" name="Lặp lại mật khẩu" required>
+
+            <label>
+                <input type="checkbox" checked="checked" name="Nhớ tôi" style="margin-bottom:15px"> nhớ tôi
+            </label>
+            <p>Bằng cách tạo một tài khoản, bạn đồng ý với <a href="#" style="color:dodgerblue">Điều khoản & Quyền riêng tư </a> của chúng tôi.</p>
+
+            <div class="clearfix">
+                <button type="button" class="cancelbtn">hủy</button>
+                <button type="submit" class="signupbtn">Đăng kí  </button>
+            </div>
+        </div>
+    </form>
+
+</body>
+</html>

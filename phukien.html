@@ -1,0 +1,208 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel=" stylesheet" href="css/Stylesheet5.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>phukien</title>
+    <style type="text/css">
+        
+    </style>
+</head>
+<body>
+    <!--------------------menu--------------->
+    <div id="menu">
+        <div class="container-fluid">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="Habi store.html">HABI STORE</a>
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li><a href="Habi store.html">Trang chủ</a></li>
+                        <li><a href="sanpham.html">Sản Phẩm</a></li>
+                        <li><a href="#">Giỏ Hàng</a></li>
+                        <li><a href="vechungtoi.html">Vể chúng tôi</a></li>
+                        <li><a href="lienhe.html">Liên hệ</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="dangnhap.html"><span class="glyphicon glyphicon-user"></span></a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-align-justify"></span></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-------------------suluachon---------------->
+    <div class=" container">
+        <div class="suluachon">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <ul class="nav navbar-nav">
+                        <li><a href="sanpham.html">Tất cả sản phẩm</a></li>
+                        <li><a href="aoquan.html">Quần - Áo thời trang</a></li>
+                        <li><a href="damvay.html">Đầm - Váy </a></li>
+                        <li><a href="giay.html">Giày  </a></li>
+                        <li><a href="phukien.html">Phụ kiện</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#"><span class="glyphicon glyphicon-menu-hamburger"></span> Lọc </a></li>
+                        <li><a class="openBtn" onclick="openSearch()"><span class="glyphicon glyphicon-search"></span>Tìm kiếm</a></li>
+                        <div id="myOverlay" class="overlay">
+                            <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+                            <div class="overlay-content">
+                                <form action="/action_page.php">
+                                    <input type="text" placeholder="Search.." name="search">
+                                </form>
+                            </div>
+                        </div>
+
+                        <script>
+                            function openSearch() {
+                                document.getElementById("myOverlay").style.display = "block";
+                            }
+
+                            function closeSearch() {
+                                document.getElementById("myOverlay").style.display = "none";
+                            }
+                        </script>
+                    </ul>
+                </div>
+            </nav>
+
+        </div>
+    </div>
+    <!-----------------------phukienne----------------->
+    <div id="phukien">
+        <div class="container">
+            <div class="row">
+                <h3>Kết quả tìm kiếm cho: phụ kiện</h3>
+                <div class=" col-sm-3">
+                    <div class="zoom">
+                        <img src="phukien/h1.webp" alt=" #" style="height:405px;width:277px;" />
+                    </div>
+                    <h5>Băng đô trang trí Rhinestone</h5>
+                    <h5>100.000VND</h5>
+                    <a href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a>
+                </div>
+                <div class=" col-sm-3">
+                    <div class="zoom">
+                        <img src="phukien/h2.webp" alt=" #" style="height:405px;width:277px;" />
+                    </div>
+                    <h5>Thiết kế tóc vuốt lá</h5>
+                    <h5>65.000VND</h5>
+                    <a href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a>
+                </div>
+                <div class=" col-sm-3">
+                    <div class="zoom">
+                        <img src="phukien/h3.webp" alt=" #" style="height:405px;width:277px;" />
+                    </div>
+                    <h5>Rhinestone Decor Snake Design Hair Pin</h5>
+                    <h5>100.000VND</h5>
+                    <a href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a>
+                </div>
+                <div class=" col-sm-3">
+                    <div class="zoom">
+                        <img src="phukien/h4.webp" alt=" #" style="height:405px;width:277px;" />
+                    </div>
+                    <h5>Hoa trang trí tóc Claw</h5>
+                    <h5>150.000VND</h5>
+                    <a href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a>
+                </div>
+            </div>
+            <div class=" row">
+                <div class=" col-sm-3">
+                    <div class="zoom">
+                        <img src="phukien/h5.webp" alt=" #" style="height:405px;width:277px;" />
+                    </div>
+                    <h5>Dây curoa trang trí vòng tròn</h5>
+                    <h5>120.000VND</h5>
+                    <a href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a>
+                </div>
+                <div class=" col-sm-3">
+                    <div class="zoom">
+                        <img src="phukien/h6.webp" alt=" #" style="height:405px;width:277px;" />
+                    </div>
+                    <h5>Khăn choàng in chuỗi</h5>
+                    <h5>90.000VND</h5>
+                    <a href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a>
+                </div>
+                <div class=" col-sm-3">
+                    <div class="zoom">
+                        <img src="phukien/h7.webp" alt=" #" style="height:405px;width:277px;" />
+                    </div>
+                    <h5>Kính râm gọng vuông kim loại</h5>
+                    <h5>150.000VND</h5>
+                    <a href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a>
+                </div>
+                <div class=" col-sm-3">
+                    <div class="zoom">
+                        <img src="phukien/h8.webp" alt=" #" style="height:405px;width:277px;" />
+                    </div>
+                    <h5>Kính thời trang gọng vuông</h5>
+                    <h5>120.000VND</h5>
+                    <a href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------cuoitrangne----------------------->
+    <div id="cuoitrang6">
+        <div class="container">
+            <div class=" row">
+                <div class="col-md-3">
+                    <h5>SẢN PHẨM</h5>
+                    <ul>
+                        <li><a hreft="damvay.html#">Đầm </a></li>
+                        <li><a hreft="aoquan.html">Áo - Quần</a></li>
+                        <li><a hreft="phukien.html">Phụ kiện  </a></li>
+                        <li><a hreft="phukien.html">Túi </a></li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <h5>TRỢ GIÚP</h5>
+                        <ul>
+                            <li><a href="#">Tìm đơn hàng</a></li>
+                            <li><a href="#">Đổi trả</a></li>
+                            <li><a href="#">Giao hàng</a></li>
+                            <li><a href="#">FAQs</a></li>
+                        </ul>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <h5>LIÊN HỆ</h5>
+                            <p>
+                                Mọi câu hỏi? Vui lòng liên hệ 1213,<br /> chung cư An Phú Đông vườn lài quận 12
+                                TP. Hồ Chí Minh hoặc Gọi lại chúng tôi (+84) 36 5707768
+                            </p>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <h5>NHẬN THÔNG BÁO KHUYẾN MÃI</h5>
+                                <form>
+                                    <div class=" email">
+                                        <input class="mail" type="text" name="mail" placeholder="Email cua ban" />
+                                    </div>
+                                    <div class="dang ki">
+                                        <button class="btn btn-info">
+                                            Đăng ký
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>

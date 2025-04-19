@@ -1,0 +1,309 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel=" stylesheet" href="css/Stylesheet3.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <title>sanpham</title>
+    <style type="text/css">
+    </style>
+</head>
+<body>
+    <!------------------------------menu-------------------------->
+    <div id="menu">
+        <div class="container-fluid">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="Habi store.html">HABI STORE</a>
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li><a href="Habi store.html">Trang chủ</a></li>
+                        <li><a href="sanpham.html">Sản Phẩm</a></li>
+                        <li><a href="giohang.html">Giỏ Hàng</a></li>
+                        <li><a href="vechungtoi.html">Về chúng tôi</a></li>
+                        <li><a href="lienhe.html">Liên hệ</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="dangnhap.html"><span class="glyphicon glyphicon-user"></span></a></li>
+                        <li><a href="giohang.html"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-align-justify"></span></a></li>
+                    </ul>
+                </div>
+            </nav>
+
+        </div>
+    </div>
+    <!-----------------------------su lua chon-------------------->
+    <div class=" container">
+        <div class="suluachon">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <ul class="nav navbar-nav">
+                        <li><a href="sanpham.html">Tất cả sản phẩm</a></li>
+                        <li><a href="aoquan.html">Quần - Áo thời trang</a></li>
+                        <li><a href="damvay.html">Đầm - Váy </a></li>
+                        <li><a href="giay.html#">Giày  </a></li>
+                        <li><a href="phukien.html">Phụ kiện</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#"><span class="glyphicon glyphicon-menu-hamburger"></span> Lọc </a></li>
+                        <li><a class="openBtn" onclick="openSearch()"><span class="glyphicon glyphicon-search"></span>Tìm kiếm</a></li>
+                        <div id="myOverlay" class="overlay">
+                            <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+                            <div class="overlay-content">
+                                <form action="/action_page.php">
+                                    <input type="text" placeholder="Search.." name="search">
+                                </form>
+                            </div>
+                        </div>
+                        <script>
+                            function openSearch() {
+                                document.getElementById("myOverlay").style.display = "block";
+                            }
+                            function closeSearch() {
+                                document.getElementById("myOverlay").style.display = "none";
+                            }
+                        </script>
+                    </ul>
+                </div>
+            </nav>
+
+        </div>
+    </div>
+
+    <!--------------------------sanphamne------------------------->
+    <div id="sanphamne">
+        <div class="container">
+            <div class=" row ">
+                <div class=" col-sm-3">
+                    <div class="zoom">
+                        <img src="sanpham/h1.webp" alt="#" style="height:405px;width:277px;" />
+                    </div>
+                    <h5>Đầm Plus Size Nút Dây kéo Hoa Sẵn sàng</h5>
+                    <h5>412.000VND</h5>
+                    <a href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a>
+                    
+                </div>
+                <div class=" col-sm-3">
+                    <div class="zoom">
+                        <img src="sanpham/h2.webp" alt="#" style="height:405px;width:277px;" />
+                    </div>
+                    <h5>Đầm Plus Size Tương phản ren Hoa Boho</h5>
+                    <h5>357.000VND</h5>
+                    <a href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a>
+                </div>
+                <div class=" col-sm-3">
+                    <div class="zoom">
+                        <img src="sanpham/h3.webp" alt="#" style="height:405px;width:277px;" />
+                    </div>
+                    <h5>Áo thun Plus size Đắp vá Lá thư Giải trí</h5>
+                    <h5>277.000VND</h5>
+                    <a href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a>
+                </div>
+                <div class=" col-sm-3">
+                    <div class="zoom">
+                        <img src="sanpham/h4.webp" alt="#" style="height:405px;width:277px;" />
+                    </div>
+                    <h5>Áo thun Plus size Sọc Giải trí</h5>
+                    <h5>272.000VND</h5>
+                    <a href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a>
+                </div>
+            </div>
+
+            <div class=" row ">
+                <div class=" col-sm-3">
+                    <div class="zoom">
+                        <img src="sanpham/h5.webp" alt="#" style="height:405px;width:277px;" />
+                    </div>
+                    <h5>Váy Plus Size Xù Tách cao màu trơn Gợi cảm</h5>
+                    <h5>222.000VND</h5>
+                    <a href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a>
+                </div>
+                <div class=" col-sm-3">
+                    <div class="zoom">
+                        <img src="sanpham/h6.webp" alt="#" style="height:405px;width:277px;" />
+                    </div>
+                    <h5>Váy Plus Size Thắt nút Viên lá sen màu trơn Boho</h5>
+                    <h5>412.000VND</h5>
+                    <a href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a>
+                </div>
+                <div class=" col-sm-3">
+                    <div class="zoom">
+                        <img src="sanpham/h7.webp" alt="#" style="height:405px;width:277px;" />
+                    </div>
+                    <h5>Váy Plus Size Tương phản lông thú giả màu trơn Thanh lịch</h5>
+                    <h5>232.000VND</h5>
+                    <a href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a>
+                </div>
+                <div class=" col-sm-3">
+                    <div class="zoom">
+                        <img src="sanpham/h8.webp" alt="#" style="height:405px;width:277px;" />
+                    </div>
+                    <h5>Đầm Plus Size Mesh Thắt nút Xù cắt Dây kéo màu trơn </h5>
+                    <h5>412.000VND</h5>
+                    <a href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a>
+                </div>
+            </div>
+            <div class=" row ">
+                <div class=" col-sm-3">
+                    <div class="zoom">
+                        <img src="sanpham/h9.webp" alt="#" style="height:405px;width:277px;" />
+                    </div>
+                    <h5>Giày bệt Nữ</h5>
+                    <h5>417.000VND</h5>
+                    <a href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a>
+                </div>
+                <div class=" col-sm-3">
+                    <div class="zoom">
+                        <img src="sanpham/h10.webp" alt="#" style="height:405px;width:277px;" />
+                    </div>
+                    <h5>Giày Giản dị Nữ Sọc Ren lên Thể thao</h5>
+                    <h5>417.000VND</h5>
+                    <a href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a>
+                </div>
+                <div class=" col-sm-3">
+                    <div class="zoom">
+                        <img src="sanpham/h11.webp" alt="#" style="height:405px;width:277px;" />
+                    </div>
+                    <h5>ROMWE Cyber Luvr Giày Cao gót Nữ màu trơn</h5>
+                    <h5>800.000VND</h5>
+                    <a href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a>
+                </div>
+                <div class=" col-sm-3">
+                    <div class="zoom">
+                        <img src="sanpham/h12.webp" alt="#" style="height:405px;width:277px;" />
+                    </div>
+                    <h5>Giày bệt Nữ Chuỗi màu trơn</h5>
+                    <h5>400.000VND</h5>
+                    <a href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a>
+                </div>
+            </div>
+            <div class=" row ">
+                <div class=" col-sm-3">
+                    <div class="zoom">
+                        <img src="sanpham/h13.webp" alt="#" style="height:405px;width:277px;" />
+                    </div>
+                    <h5>Đai trang trí viền mắt ren lên rộng</h5>
+                    <h5>90.000VND</h5>
+                    <a href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a>
+                </div>
+                <div class=" col-sm-3">
+                    <div class="zoom">
+                        <img src="sanpham/h14.webp" alt="#" style="height:405px;width:277px;" />
+                    </div>
+                    <h5>Đai đàn hồi trang trí Rhinestone</h5>
+                    <h5>150.000VND</h5>
+                    <a href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a>
+                </div>
+                <div class=" col-sm-3">
+                    <div class="zoom">
+                        <img src="sanpham/h15.webp" alt="#" style="height:405px;width:277px;" />
+                    </div>
+                    <h5>Faux Pearl Trang trí lưới tóc hoop</h5>
+                    <h5>100.000VND</h5>
+                    <a href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a>
+                </div>
+                <div class=" col-sm-3">
+                    <div class="zoom">
+                        <img src="sanpham/h16.webp" alt="#" style="height:405px;width:277px;" />
+                    </div>
+                    <h5>Mũ trang trí mạng che mặt lồng chim Kẹp tóc</h5>
+                    <h5>120.000VND</h5>
+                    <a href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a>
+                </div>
+            </div>
+            <div class=" row ">
+                <div class=" col-sm-3">
+                    <div class="zoom">
+                        <img src="sanpham/h17.webp" alt="#" style="height:405px;width:277px;" />
+                    </div>
+                    <h5>Túi đeo chéo dây chuyền dập nổi chần bông</h5>
+                    <h5>90.000VND</h5>
+                    <a href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a>
+                </div>
+                <div class=" col-sm-3">
+                    <div class="zoom">
+                        <img src="sanpham/h19.webp" alt="#" style="height:405px;width:277px;" />
+                    </div>
+                    <h5>Túi vai</h5>
+                    <h5>250.000VND</h5>
+                    <a href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a>
+                </div>
+                <div class=" col-sm-3">
+                    <div class="zoom">
+                        <img src="sanpham/h18.webp" alt="#" style="height:405px;width:277px;" />
+                    </div>
+                    <h5>Kính râm gọng hình học</h5>
+                    <h5>100.000VND</h5>
+                    <a href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a>
+                </div>
+                <div class=" col-sm-3">
+                    <div class="zoom">
+                        <img src="sanpham/h20.webp" alt="#" style="height:405px;width:277px;" />
+                    </div>
+                    <h5>Kính mắt gọng vuông</h5>
+                    <h5>90.000VND</h5>
+                    <a href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------------cuotrang------------------------------>
+    <div id="cuoitrang2">
+        <div class="container">
+            <div class=" row">
+                <div class="col-md-3">
+                    <h5>SẢN PHẨM</h5>
+                    <ul>
+                        <li><a hreft="damvay.html#">Đầm </a></li>
+                        <li><a hreft="aoquan.html">Áo - Quần</a></li>
+                        <li><a hreft="phukien.html">Phụ kiện  </a></li>
+                        <li><a hreft="#">Túi </a></li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <h5>TRỢ GIÚP</h5>
+                        <ul>
+                            <li><a hreft="damvay.html#">Đầm </a></li>
+                            <li><a hreft="aoquan.html">Áo - Quần</a></li>
+                            <li><a hreft="phukien.html">Phụ kiện  </a></li>
+                            <li><a hreft="#">Túi </a></li>
+                        </ul>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <h5>LIÊN HỆ</h5>
+                            <p>
+                                Mọi câu hỏi? Vui lòng liên hệ 1213,<br /> chung cư An Phú Đông vườn lài quận 12
+                                TP. Hồ Chí Minh hoặc Gọi lại chúng tôi (+84) 36 5707768
+                            </p>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <h5>NHẬN THÔNG BÁO KHUYẾN MÃI</h5>
+                                <form>
+                                    <div class=" email">
+                                        <input class="mail" type="text" name="mail" placeholder="Email cua ban" />
+                                    </div>
+                                    <div class="dang ki">
+                                        <button class="btn btn-info">
+                                            Đăng ký
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

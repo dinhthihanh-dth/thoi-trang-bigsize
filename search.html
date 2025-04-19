@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- Optional: Font Awesome -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <title>Search</title>
+    <style type="text/css">
+        body {
+            font-family: Arial;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        .openBtn {
+            background: #f1f1f1;
+            border: none;
+            padding: 10px 15px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .openBtn:hover {
+            background: #bbb;
+        }
+        .overlay {
+            height: 100%;
+            width: 100%;
+            display: none;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: rgba(0,0,0,0.9);
+        }
+        .overlay-content {
+            position: relative;
+            top: 46%;
+            width: 80%;
+            text-align: center;
+            margin: auto;
+        }
+        .overlay .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 45px;
+            font-size: 60px;
+            cursor: pointer;
+            color: white;
+        }
+        .overlay .closebtn:hover {
+            color: #ccc;
+        }
+        .overlay input[type=text] {
+            padding: 15px;
+            font-size: 17px;
+            border: none;
+            float: left;
+            width: 80%;
+            background: white;
+        }
+        .overlay input[type=text]:hover {
+            background: #f1f1f1;
+        }
+        .overlay button {
+            float: left;
+            width: 20%;
+            padding: 15px;
+            background: #ddd;
+            font-size: 17px;
+            border: none;
+            cursor: pointer;
+        }
+        .overlay button:hover {
+            background: #bbb;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="myOverlay" class="overlay">
+        <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+        <div class="overlay-content">
+            <form action="/action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit">
+                    <span class="glyphicon glyphicon-search"></span>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <button class="openBtn" onclick="openSearch()">
+        <span class="glyphicon glyphicon-search"></span>
+    </button>
+
+    <script>
+        function openSearch() {
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function closeSearch() {
+            document.getElementById("myOverlay").style.display = "none";
+        }
+    </script>
+
+</body>
+</html>

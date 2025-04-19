@@ -1,0 +1,156 @@
+﻿body
+.navbar-default .navbar-brand {
+    color: #aa1212;
+}
+
+.navbar-brand {
+    font-family: cursive;
+    color: red;
+    font-size: 30px;
+}
+
+.navbar-default {
+    background-color: #dddddd;
+    border-color: white;
+    width: 100%;
+}
+
+.container h3 {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-family: cursive;
+    margin-left: 15px;
+}
+
+#cuoitrang4 {
+    background-color: #0c0b0b;
+    padding-bottom: -13px;
+}
+
+    #cuoitrang4 h5 {
+        color: ghostwhite;
+        margin-top: 100px;
+    }
+
+    #cuoitrang4 ul {
+        line-height: 40px;
+        margin-bottom: 235px;
+    }
+
+    #cuoitrang4 li a {
+        color: #ccc4c4;
+        margin-left: -35px;
+    }
+
+    #cuoitrang4 p {
+        color: #ccc4c4;
+    }
+
+.col-sm-3:hover img {
+    transform: scale(1.1);
+}
+
+.zoom {
+    overflow: hidden;
+}
+
+.col-sm-3 img {
+    transition: all 0.3s ease-in-out;
+}
+
+#vayvadam {
+    margin-bottom: 100px;
+}
+
+.box-sizing {
+    border-box;
+}
+
+.openBtn {
+    background: #f1f1f1;
+    border: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+    .openBtn:hover {
+        background: #bbb;
+    }
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+}
+
+.overlay-content {
+    position: relative;
+    top: 46%;
+    width: 80%;
+    text-align: center;
+    margin-top: 30px;
+    margin: auto;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    cursor: pointer;
+    color: white;
+}
+
+    .overlay .closebtn:hover {
+        color: #ccc;
+    }
+
+.overlay input[type=text] {
+    padding: 15px;
+    font-size: 17px;
+    border: none;
+    float: left;
+    width: 80%;
+    background: white;
+}
+
+    .overlay input[type=text]:hover {
+        background: #f1f1f1;
+    }
+
+.overlay button {
+    float: left;
+    width: 20%;
+    padding: 15px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+    .overlay button:hover {
+        background: #bbb;
+    }
+
+.col-sm-3 .chitiet {
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    background-color: aquamarine;
+    color: black;
+    padding: 10px 0;
+    overflow: hidden;
+}
+
+.zoom .chitiet {
+    display: block;
+}
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Giỏ hàng</title>
+  <style>
+    /* CSS đơn giản cho đẹp tí */
+    body { font-family: sans-serif; padding: 20px; background: #f8f9fa; }
+    .cart-item { display: flex; align-items: center; margin-bottom: 20px; background: white; padding: 10px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    .cart-item img { height: 100px; margin-right: 20px; }
+    .cart-item h4 { margin: 0; }
+    .cart-item p { margin: 5px 0; }
+  </style>
+</head>
+<body>
+  <h1>🛒 Giỏ Hàng Của Bạn</h1>
+  <div id="cart-container"></div>
+
+  <script>
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+    const container = document.getElementById("cart-container");
+
+    let total = 0;
+
+    if (cart.length === 0) {
+      container.innerHTML = "<p>Giỏ hàng đang trống!</p>";
+    } else {
+      cart.forEach(item => {
+        const itemTotal = item.price * item.quantity;
+        total += itemTotal;
+
+        const div = document.createElement("div");
+        div.className = "cart-item";
+        div.innerHTML = `
+          <img src="${item.image}" alt="${item.name}">
+          <div>
+            <h4>${item.name}</h4>
+            <p>Giá: ${item.price.toLocaleString()}₫</p>
+            <p>Số lượng: ${item.quantity}</p>
+            <p><strong>Tổng: ${itemTotal.toLocaleString()}₫</strong></p>
+          </div>
+        `;
+        container.appendChild(div);
+      });
+
+      const totalDiv = document.createElement("div");
+      totalDiv.innerHTML = `<h3>Tổng cộng: ${total.toLocaleString()}₫</h3>`;
+      container.appendChild(totalDiv);
+    }
+  </script>
+</body>
+</html>
